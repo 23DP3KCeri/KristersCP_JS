@@ -1,16 +1,3 @@
-function fetchCatFact() {
-    fetch("https://catfact.ninja/fact")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("cat-fact").textContent = data.fact;
-        })
-        .catch(error => {
-            console.error("Kļūda ielādējot kaķu faktu:", error);
-            document.getElementById("cat-fact").textContent = "Neizdevās ielādēt faktu. Pamēģini vēlreiz!";
-        });
-}
-
-
 function showRandomBoxingTip() {
     const tips = [
         "Strādā pie kāju kustības – labs bokseris ir ātrs uz kājām!",
